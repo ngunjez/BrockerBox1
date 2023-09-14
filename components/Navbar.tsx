@@ -7,8 +7,8 @@ const Navbar = () => {
     <NavbarContainer>
       <NavLogo>
         <NavLinks>
-          <Link href="/">About Us</Link>
-          <Link href="/">Why Us</Link>
+          <Link href="/">ABOUT US</Link>
+          <Link href="/">WHY US</Link>
         </NavLinks>
       </NavLogo>
     </NavbarContainer>

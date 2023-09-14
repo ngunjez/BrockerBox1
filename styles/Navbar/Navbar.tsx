@@ -10,8 +10,8 @@ justify-content: center;
 z-index:20;
 top:0;
 overflow:hidden;
-
 `
+
 
 export const NavLogo = styled.div`
 position:relative;
@@ -37,7 +37,7 @@ margin-top:110px;
 display:flex;
 justify-content: space-evenly;
 color: #192B3F;
-font-family: Inter;
+font-family: Proxima Nova;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;

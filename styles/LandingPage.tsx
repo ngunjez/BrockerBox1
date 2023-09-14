@@ -7,6 +7,9 @@ width:100%;
 min-height:100vh;
 fill: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 28.65%, #192B3F 93.75%);
 z-index-20px;
+@media screen and (max-width: 768px){
+    height:auto;
+}
 `
 export const StreamliningContainer = styled.div`
 position:relative;
@@ -16,12 +19,13 @@ margin-top:158px;
 display:flex;
 flex-direction; column;
 justify-content:center;
-background-image: url("/Rectangle2.svg");
+background-image: url("/Frame 336.jpg");
 background-position:center;
 background-size:cover;
 background-repeat:no-repeat;
+fill: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 28.65%, #192B3F 93.75%);
 `
-export const StreamliningHeader = styled.p`
+export const StreamliningHeader = styled.div`
 position:absolute;
 margin-top:439px;
 color: #FFF;
@@ -29,7 +33,7 @@ font-family: Roboto;
 font-size: 56px;
 font-style: normal;
 font-weight: 300;
-line-height: 150%; /* 84px */
+line-height: 150%;
 letter-spacing: -1.232px;
 @media screen and (max-width: 768px) {
     font-size:40px;
@@ -44,7 +48,7 @@ height:487px;
 background: #364CE5;
 `
 
-export const Header1 = styled.p`
+export const Header1 = styled.div`
 position:absolute;
 display:flex;
 font-color: FFF;
@@ -68,7 +72,7 @@ padding: 74px 74px;
     }
 `
 
-export const Header2 = styled.p`
+export const Header2 = styled.div`
 position:absolute;
 margin-top:200px;
 padding: 92px 270px;
@@ -132,7 +136,7 @@ top:0;
 }
 `
 
-export const Text = styled.p`
+export const Text = styled.div`
 width: 371px;
 height: 199px;
 flex-shrink: 0;
@@ -159,7 +163,8 @@ background:#FFFFFF;
 @media screen and (max-width: 768px) {
 align-items:center;
 justify-content:center;
-     }
+height:auto;
+}
 `
 
 export const Why = styled.div`
@@ -168,12 +173,12 @@ left:10%;
 width: 1564px;
 height: 162px;
 fonr-color:#262833;
-font-family: Inter;
+font-family: Roboto;
 font-size: 126px;
 font-style: normal;
 font-weight: 700;
 line-height: 150%; 
-letter-spacing: -2.772px;
+letter-spacing: -4.772px;
 text-transform: uppercase;
 font-color:#262833;
 color:transparent;
@@ -185,11 +190,13 @@ color:transparent;
     display:flex;
     flex-direction:column;
     margin-top:-4px;
+letter-spacing: -1.772px;
+
      }
 `
 export const WhyText = styled.div`
 position:absolute;
-margin-top:-75px;
+margin-top:-60px;
 margin-left:34%;
 color: #262833;
 font-family: Roboto;
@@ -197,16 +204,19 @@ font-size: 47px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
-
+text-transform: lowercase;
+letter-spacing: -4.772px;
 @media screen and (max-width: 768px) {
-    top:50%;
-    font-size:60px;
+    top:60%;
+    font-size:20px;
     display:flex;
     flex-direction:column;
     text-align:center;
     justify-content:center;
     white-space: nowrap;
     left:0;
+    margin-left:60px;
+    letter-spacing: -1.772px;
      }
 `
 
@@ -225,7 +235,7 @@ flex-shrink: 0;
      
 `
 
-export const ForText = styled.p`
+export const ForText = styled.div`
 position:absolute;
 display:flex;
 flex-direction:column;
@@ -233,13 +243,13 @@ align-items:flex-start;
 top:70px;
 left:0;
 width: 560px;
-color: #364CE5;
+color: #262833;
 font-family: Roboto;
 font-size: 65px;
 font-style: normal;
-font-weight: 300;
-line-height: 150%; 
-letter-spacing: -1.43px;
+font-weight: 400;
+line-height: 84.2%;
+// letter-spacing: -1.43px;
 @media screen and (max-width: 768px) {
     width:300px;
     padding-right:260px;
@@ -255,7 +265,7 @@ letter-spacing: -1.43px;
      }
 `
 
-export const Offers = styled.p`
+export const Offers = styled.div`
 position:absolute;
 width: 480px;
 height: 276px;
@@ -272,7 +282,7 @@ letter-spacing: -0.44px;
     width:300px;
     height:150px;
     margin-top:-230px;
-    font-size:20px;
+    font-size:16px;
     display:flex;
     flex-direction:row;
     justify-content:center;
@@ -304,6 +314,7 @@ export const Rec25 = styled.div`
 position:relative;
 margin-top:125px;
 display: flex;
+flex-direction:row;
 width: 1295px;
 height: 648px;
 margin-left:160px;
@@ -311,6 +322,14 @@ justify-content: center;
 align-items: center;
 gap: 165px;
 flex-shrink: 0;
+@media screen and (max-width: 768px) {
+    width:80px;
+    height:300px;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    overflow-wrap: break-word;
+}
 `
 
 export const ImgContainer = styled.div`
@@ -320,14 +339,14 @@ flex-shrink: 0;
 border-radius: 3px;
 background: url("/Rectangle25.svg"), lightgray 50% / cover no-repeat;
 @media screen and (max-width: 768px) {
-    margin-top:-1100px;
+    margin-top:-420px;
     width:80px;
     height:300px;
     display:flex;
     flex-direction:column;
     text-align:center;
     white-space: nowrap;
-    padding-right:1030px;
+    padding-right:480px;
      }
 `
 
@@ -346,31 +365,37 @@ left:10%;
   width:300px;
   height:200px;
   margin-left:10%;
+  display: flex;
+flex-direction:column;
  }
 `
 
-export const AgentsText = styled.p`
+export const AgentsText = styled.div`
 position:relative;
 display:flex;
 flex-direction:column;
 gap:10px;
 width: 493px;
-color: #364CE5;
+color: #192B3F;
 font-family: Roboto;
 font-size: 65px;
 font-style: normal;
-font-weight: 300;
-line-height: 150%;
+font-weight: 400;
+line-height: 84.187%; 
 letter-spacing: -1.43px;
-white-space:no-wrap;
+white-space:nowrap;
 @media screen and (max-width: 768px) {
     width:300px;
     height:200px;
-    margin-left:-500px;
+    margin-left:-90px;
+    font-size:25px;
    }
 `
 
-export const Box = styled.p`
+export const Box = styled.div`
+position:relative;
+display:flex;
+flex-direction:column;
 width: 480px;
 height: 276px;
 flex-shrink: 0;
@@ -381,7 +406,15 @@ font-style: normal;
 font-weight: 400;
 line-height: 150%;
 letter-spacing: -0.44px;
-
+@media screen and (max-width: 768px){
+    width:300px;
+    height:250px;
+    margin-top:-30px;
+    left:-30px;
+ display:flex;
+flex-direction:column;
+font-size:16px;
+}
 `
 
 export const BuyersContainer = styled.div`
@@ -394,7 +427,10 @@ gap: 165px;
 flex-shrink: 0;
 margin-top:141px;
 margin-left:160px;
-
+@media screen and (max-width:768px){
+    margin-top:300px;
+    height:auto;
+}
 `
 
 export const ForBuyers = styled.div`
@@ -408,42 +444,45 @@ gap: 47px;
 margin-top:355px;
 @media screen and (max-width: 768px) {
     width:475px;
-    height:200px;
+    height:auto;
     margin-left:10%;
-    
+    gap:20px;
+    justify-content:space-between;
+    margin-top:200px;
    }
 `
 
-export const ForBuyersText = styled.p`
+export const ForBuyersText = styled.div`
 width: 312px;
 height: 100px;
 flex-shrink: 0;
-color: #364CE5;
+display:flex;
+color: #192B3F;
 font-family: Roboto;
 font-size: 65px;
 font-style: normal;
-font-weight: 300;
-line-height: 150%;
+font-weight: 400;
+line-height: 84.2%;
+text-transform: uppercase;
 letter-spacing: -1.43px;
 @media screen and (max-width: 768px) {
     display:flex;
     width:300px;
-    height:150px;
+    height:auto;
     padding-right:50px;
-    // margin-top:1430px;
+    margin-top:-280px;
     font-size:30px;
     // align-items:center;
     display:flex;
     flex-direction:row;
     justify-content:center;
     margin-left:-120px;
-    // margin-right:1200px;
-    // white-space: nowrap;
     flex-wrap:wrap;
+    gap:15px;
      }
 `
 
-export const Provides = styled.p`
+export const Provides = styled.div`
 width: 480px;
 height: 276px;
 flex-shrink: 0;
@@ -456,13 +495,14 @@ line-height: 150%; /* 30px */
 letter-spacing: -0.44px;
 @media screen and (max-width: 768px) {
     width:70%;
-    margin-top:-200px;
-    font-size:20px;
+    height:300px;
+    margin-top:-50px;
+    font-size:16px;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    margin-left: -140px;
+    margin-left: -146px;
      }
 `
 
@@ -474,14 +514,13 @@ left:20%;
 position:relative;
 background: url("/Rectangle26.svg"), lightgray 50% / cover no-repeat;
 @media screen and (max-width: 768px) {
-    margin-top:-1100px;
+    margin-top:-1000px;
     width:320px;
     height:300px;
     display:flex;
     flex-direction:column;
     text-align:center;
     white-space: nowrap;
-    // padding-left:1030px;
     margin-left:-815px;
      }
 `
@@ -545,7 +584,7 @@ border-radius: 5px;
 background: url("/Rectangle29.svg"), lightgray 50% / cover no-repeat;
 mix-blend-mode: soft-light;
 @media screen and (max-width: 768px) {
-    // margin-top:-1100px;
+    margin-top:60px;
     width:80px;
     height:300px;
     display:flex;
@@ -554,10 +593,11 @@ mix-blend-mode: soft-light;
     white-space: nowrap;
     padding-left:1030px;
     margin-left:0;
+    transform: translateY(0);
      }
 `
 
-export const Soon = styled.p`
+export const Soon = styled.div`
 position:absolute;
 font-family: Roboto;
 font-size: 110px;
@@ -588,7 +628,6 @@ justify-content:center;
 left:40%;
 width: 331px;
 height: 47px;
-flex-shrink: 0;
 border-radius: 38px;
 background: #FFF;
 color: #364CE5;
@@ -596,11 +635,12 @@ font-family: Proxima Nova;
 font-size: 20px;
 font-style: normal;
 font-weight: 400;
-line-height: 150%; /* 30px */
+line-height: 150%; 
 letter-spacing: -0.44px;
+border: none;
 @media screen and (max-width: 768px) {
 justify-content:center;
-font-size:16px;
+font-size:12px;
 align-items:center;
 gap:0;
 margin-top:700px;
@@ -610,5 +650,45 @@ height:30px;
 white-space:no-wrap;
 display:flex;
 flex-direction:column;
+padding:10px;
      }
+`
+
+export const DevelopersText = styled.div`
+color: #364CE5;
+font-family: Roboto;
+font-size: 65px;
+font-style: normal;
+font-weight: 300;
+line-height: 84.2%;
+@media screen and (max-width: 768px) {
+    font-size:20px;
+}
+`
+
+export const Agents_brokersText = styled.div`
+color: #364CE5;
+font-family: Roboto;
+font-size: 65px;
+font-style: normal;
+font-weight: 300;
+line-height: 84.187%;
+text-transform: uppercase;
+@media screen and (max-width: 768px) {
+    font-size:20px;
+}
+`
+
+export const BuyersText = styled.div`
+display:flex;
+color: #364CE5;
+font-family: Roboto;
+font-size: 65px;
+font-style: normal;
+font-weight: 300;
+line-height: 84.2%;
+text-transform: uppercase;
+@media screen and (max-width: 768px){
+    font-size:30px;
+}
 `
