@@ -37,7 +37,6 @@ margin-top:110px;
 display:flex;
 justify-content: space-evenly;
 color: #192B3F;
-font-family: "Proxima Nova Rg";
 font-size: 16px;
 font-style: normal;
 font-weight: 400;

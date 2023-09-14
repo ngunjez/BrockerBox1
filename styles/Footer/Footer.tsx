@@ -50,7 +50,6 @@ flex-shrink: 0;
 
 export const CompanyText = styled.p`
 color: #364CE5;
-font-family: Proxima Nova;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -60,7 +59,6 @@ line-height: normal;
 
 export const SocialsText =  styled.p`
 color: #364CE5;
-font-family: Proxima Nova;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -89,7 +87,6 @@ flex-shrink: 0;
 
 export const TermsText = styled.p`
 color: #364CE5;
-font-family: Proxima Nova;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
