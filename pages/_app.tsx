@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 import localFont from "next/font/local";
 import type { AppProps } from "next/app";
-const proximaFont = localFont({ src: "/font/Proxima.otf" });
+const proximaFont = localFont({ src: "fonts/Proxima.otf" });
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={proximaFont.className}>
